@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+/* color scheme{
+  #027373
+  #038c7f
+  #a9d9d0
+  #f2e7dc
+  #0d0d0d
+} */
+
+/* Navbar styling */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 40px;
+  color: #f2e7dc !important;
+  padding-left: 30px;
+}
+#Navbar{
+  background-color:#038c7f;
+  position: relative;
+  
+  /* opacity: 0.1; */
+  z-index: 1;
+}
+
+/* hfeuskhf */
+
+.container-fluid{
+  padding: 30px 60px;
+  
+}
+.navbar-nav{
+  position: absolute;
+  right:120px;
+}
+.nav-link-pad{
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+  color: #f2e7dc ;
+}
+
+/* Entry Section Styling */
+
+
+
+.entry-title{
+  font-weight: 700 !important;
+  font-size: 70px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 100px 70px;
+  color: #f2e7dc;
+  
+  text-shadow: #000 2px 2px;
+  padding-left: 200px;
+  position: relative;
+}
+
+
+.entry-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.entry-content {
+  position: relative;
+  z-index: 1;
+}
+
+.entry-section:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/entrysection/img4.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 1; /* Adjust the opacity to control the darkness */
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+  filter: brightness(50%);
+  
+}
+
+.entry-section:hover:before {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.giphy-embed{
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  right: 250px;
+  top: 70px;
+}
+
+.entry-para{
+  color: #f2e7dc;
+  font-weight: 400;
+  font-size: 15px;
+  position :absolute;
+  left: 200px;
+  bottom: 0;
+  padding-right: 170px;
+  padding-bottom: 50px;
+}
+.btn-text {
+  z-index: 2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 27px;
+  border: #038c7f solid 0.15em;
+  border-radius: 0.25em;
+  color: #ffffff;
+  font-size: 1.5em;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  background-color: #038c7f;
+}
+
+.button:hover {
+  color: #212121;
+}
+
+.button:active {
+  border-color: #038c7f;
+}
+
+.btn-circle {
+  position: absolute;
+  width: 9em;
+  aspect-ratio: 1;
+  background: #a9d9d0;
+  opacity: 50%;
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+
+.btn-circle:nth-child(1) {
+  left: 0;
+  transform: translateX(-8em);
+}
+
+.btn-circle:nth-child(2) {
+  right: 0;
+  transform: translateX(8em);
+}
+
+.button:hover .btn-circle:nth-child(1) {
+  transform: translateX(-1em);
+}
+
+.button:hover .btn-circle:nth-child(2) {
+  transform: translateX(1em);
+}
+
+.button:active .btn-circle {
+  background: #038c7f;
+}
+.download-btn-label{
+  color: #f2e7dc;
+  font-weight: 700;
+  font-size: 23px;
+  text-align: center;
+  text-shadow: 2px 2px #000 ;
+}
+
+.download-section{
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+} 
+
+ /* feature question styling */
+
+.feature-question{
+  background-color: #027373;
+  position: relative;
+  z-index: 3;
+  bottom: 80px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+  transition: background-color 500ms ease-in-out;
+  max-width: 1100px; /* Set the maximum width as needed */
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  
+}
+
+.feature-question:hover{
+  background-color: #f2e7dc;
+  .feature-question-para{
+    color: #027373;
+    font-size: 350%;
+    transition: color 500ms linear;
+    transition: font-size 300ms ease-in-out;
+  }
+  transition: background-color 500ms ease-in-out;
+}
+
+#feature-question-section{
+  height: auto;
+  width: auto;
+  background-color: #a9d9d0;
+  padding-bottom: 100px;
+}
+
+.feature-question-para{
+  font-weight: 700 ;
+  text-align: center;
+  font-size: 300%;
+  margin:auto;
+  font-family: 'Montserrat', sans-serif;
+  color: #f2e7dc;
+  padding-top: 60px;
+  padding-bottom: 60px ;
+  transition: color 500ms linear;
+  transition: font-size 300ms ease-in-out;
+}
+
+
+
+.features-div{
+  padding: 0 50px;
+}
+
+.features{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.feature-icon{
+  padding-bottom: 30px;
+  color: #038c7f;
+  font-size: 50px;
+  transition: all 100ms linear;
+}
+
+.feature-icon:hover{
+  color:#027373;
+  font-size: 55px;
+  transition: all 100ms linear;
+}
+
+.feature-heading{
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 15px;
+  font-weight: 700;
+}
+
+.feature-para{
+  text-align: center;
+  font-weight: 400;
+}
+
+#timeline-section{
+background-color: #f2e7dc;
+position: relative;
+padding-bottom: 100px;
+}
+
+
+.image-container {
+  
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+
+.image-timeline {
+
+  width: 60%;
+  translate: -5%; 
+  height: max-content;
+
+  margin-top: 100px;
+  margin-bottom: 50px;
+  transition: all 300ms ease-in-out;
+}
+
+.image-timeline:hover{
+  scale: 103%;
+  translate: 0.5%;
+  transition: all 400ms ease-in-out;
+}
+
+.timeline-heading{
+  font-weight: 700 ;
+  font-size: 50px;
+  font-family: 'Montserrat', sans-serif;
+  color: #027373;
+  padding: 40px 0 10px 30px;
+}
+
+.unit-para{
+  padding-left: 30px;
+  color: #0d0d0d;
+}
+
+.timeline-learn-more{
+  position: absolute;
+  right:20px;
+  bottom: 20px;
+  
+}
+
+.learn-more-p-tag{
+  background-color: #f2e7dc;
+  position: relative;
+}
+
+.image-earth{
+  width: 25%;
+  rotate: -90deg;
+  margin-right: 10%;
+  transition: all 800ms ease-in-out;
+}
+
+.image-earth:hover{
+  rotate: 90deg;
+  size: 110%;
+  transition: all 800ms ease-in-out;
+}
+
+#download-section-page{
+
+  padding: 250px;
+  background-image: url('../images/entrysection/halfearth.png');
+}
+
+.down-section-parent{
+  background: #000;
+}
+
+.download-content{
+  display: flex;
+  justify-content: center;
+}
+.download-content{
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+.btn-down-main{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 24px;
+  padding-bottom: 30px;
+  
+}
+
+.btn-down-main i{
+  margin:  auto 0;
+  padding-left: 15px;
+
+}
+
+#map {
+  height: 100%;
+}
+
+
+
+
+
+
+
